@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Music player</title>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="music_cont">
+            <h2 id="title">Music</h2>
+            <h3 id="artist">Artist</h3>
+            <div class="img_cont">
+                <img src="./images/1.jpg" alt="" class="image">
+            </div>
+            <audio src="./music/music-1.mp3"></audio>
+
+            <div class="progress_container" id="progress_cont">
+                <div class="progress_duration">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">0:00</div>
+                </div>
+                <div class="progressbar" id="progressbar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- controls -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main_btn" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/14d9a59697.js" crossorigin="anonymous"></script>
+</body>
+</html>
